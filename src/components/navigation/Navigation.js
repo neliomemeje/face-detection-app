@@ -10,7 +10,7 @@ const Navigation = ({
   openModal,
 }) => {
   const handleProfile = () => {
-    fetch(`http://localhost:3001/profile/${id}`, {
+    fetch(`https://smart-brain-api-rqbk.onrender.com/profile/${id}`, {
       method: "get",
     })
       .then((response) => response.json())
@@ -25,7 +25,7 @@ const Navigation = ({
   const deleteAccount = () => {
     const message = "Are you sure you want to delete your account?";
     if (window.confirm(message)) {
-      fetch(`http://localhost:3001/profile/${email}`, {
+      fetch(`https://smart-brain-api-rqbk.onrender.com/profile/${email}`, {
         method: "put",
       })
         .then((response) => response.json())
@@ -43,7 +43,7 @@ const Navigation = ({
             alt=""
             src={
               image
-                ? `http://localhost:3001${image}`
+                ? `https://smart-brain-api-rqbk.onrender.com${image}`
                 : "https://miro.medium.com/v2/resize:fill:32:32/1*dmbNkD5D-u45r44go_cf0g.png"
             }
             width="60"

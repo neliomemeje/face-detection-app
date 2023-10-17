@@ -16,7 +16,7 @@ const EditProfile = ({ editModal, closeEditModal, email, handlePassword }) => {
   };
 
   const handleEditProfile = () => {
-    fetch(`http://localhost:3001/editprofile/${email}`, {
+    fetch(`https://smart-brain-api-rqbk.onrender.com/editprofile/${email}`, {
       method: "put",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

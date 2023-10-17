@@ -34,7 +34,7 @@ const Profile = ({
     ) {
       const formData = new FormData();
       formData.append("userImage", fileInput.files[0]);
-      fetch(`http://localhost:3001/profileimage/${id}`, {
+      fetch(`https://smart-brain-api-rqbk.onrender.com/profileimage/${id}`, {
         method: "put",
         body: formData,
       })
@@ -74,7 +74,7 @@ const Profile = ({
               <img
                 src={
                   image
-                    ? `http://localhost:3001${image}`
+                    ? `https://smart-brain-api-rqbk.onrender.com${image}`
                     : "https://miro.medium.com/v2/resize:fill:32:32/1*dmbNkD5D-u45r44go_cf0g.png"
                 }
                 alt=""

@@ -7,7 +7,7 @@ const Register = ({ loadUser, handlePassword }) => {
   const [errMsg, setErrMsg] = useState("");
 
   const onSubmitRegister = () => {
-    fetch("http://localhost:3001/register", {
+    fetch("https://smart-brain-api-rqbk.onrender.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

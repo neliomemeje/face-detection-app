@@ -11,7 +11,7 @@ const Signin = ({
   const [errMsg, setErrMsg] = useState("");
 
   const onSubmitSignin = () => {
-    fetch("http://localhost:3001/signin", {
+    fetch("https://smart-brain-api-rqbk.onrender.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
